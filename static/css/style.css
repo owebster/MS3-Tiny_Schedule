@@ -1,26 +1,52 @@
 /* 
 colour palette of choice https://coolors.co/006d77-83c5be-edf6f9-ffddd2-e29578 
-background-color: #83C5BE
+background-color: #BADEDA
 color: #EDF6F9
 */
 
 body {
-    background-color: #83C5BE;
+    background-color: #BADEDA;
     color: #FFDDD2;
 }
 /* nav */
-.navbar {
-    background-color: #006D77;
-    margin: 2%;
-    border-radius: 12px;
-}
 
-.navbar > a {
-    color: #FFDDD2;
-}
+    .navbar {
+        display: inline-block;
+        background-color: #006D77;
+        margin: 2%;
+        border-radius: 12px;
+        position: relative;
+    }
+
+    .navbar-list {
+        float: right;
+    }
+
+    .navbar > a, .heading-list {
+        color: #FFDDD2;
+    }
+
+    .navbar > ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0%;
+    }
+
+    #heading-items > li {
+        display: inline;
+        
+    }
+
+    /* For large screen devices */
+    @media screen and (min-width: 960px) {
+        .heading-list {
+            padding-right: 10px;
+        }
+    }
+
 
 /* hover states */
-.heading:hover {
+.heading:hover, .heading-list:hover {
     color: #FFDDD2;
     text-decoration: none;
 }

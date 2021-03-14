@@ -19,6 +19,11 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
+@app.route("/homepage")
+def homepage():
+    return render_template("home.html")
+
+
 @app.route("/message_board")
 def get_messages():
     messages = mongo.db.messages.find()
