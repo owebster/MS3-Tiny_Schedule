@@ -10,40 +10,6 @@ body {
 }
 /* nav */
 
-    .navbar {
-        display: inline-block;
-        background-color: #006D77;
-        margin: 2%;
-        border-radius: 12px;
-        position: relative;
-    }
-
-    .navbar-list {
-        float: right;
-    }
-
-    .navbar > a, .heading-list {
-        color: #FFDDD2;
-    }
-
-    .navbar > ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0%;
-    }
-
-    #heading-items > li {
-        display: inline;
-        
-    }
-
-    /* For large screen devices */
-    @media screen and (min-width: 960px) {
-        .heading-list {
-            padding-right: 10px;
-        }
-    }
-
 
 /* hover states */
 .heading:hover, .heading-list:hover {
