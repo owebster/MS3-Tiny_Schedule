@@ -1,6 +1,7 @@
 /* 
 colour palette of choice https://coolors.co/006d77-83c5be-edf6f9-ffddd2-e29578 
 background-color: #BADEDA
+bc: 006D77
 color: #EDF6F9
 */
 
@@ -8,11 +9,40 @@ body {
     background-color: #BADEDA;
     color: #FFDDD2;
 }
-/* nav */
 
+/* experimental nav
+.flex-containter {
+    display: flex;
+}
 
+.Nav-Bar {
+    flex: 1;
+}
+
+.logo {
+    background-color: #006D77;
+}
+
+.heading, .heading-list {
+    color: #FFDDD2;
+}
+
+#heading-items {
+    text-decoration: none;
+    list-style-type: none;
+} */
+
+.navbar {
+    background-color: #006D77;
+    border-radius: 15px;
+    color: #FFDDD2;
+}
+
+.navbar-brand {
+    color: #FFDDD2;
+}
 /* hover states */
-.heading:hover, .heading-list:hover {
+.navbar-brand:hover {
     color: #FFDDD2;
     text-decoration: none;
 }
