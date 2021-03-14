@@ -36,13 +36,14 @@ body {
     background-color: #006D77;
     border-radius: 15px;
     color: #FFDDD2;
+    margin: 2%;
 }
 
-.navbar-brand {
+.navbar-brand, .nav-link {
     color: #FFDDD2;
 }
 /* hover states */
-.navbar-brand:hover {
+.navbar-brand:hover, .nav-link:hover {
     color: #FFDDD2;
     text-decoration: none;
 }
