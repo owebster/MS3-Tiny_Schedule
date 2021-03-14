@@ -1,3 +1,16 @@
+/* 
+colour palette of choice https://coolors.co/006d77-83c5be-edf6f9-ffddd2-e29578 
+background-color: #83C5BE
+color: #EDF6F9
+*/
+
 body {
-    background-color: red;
+    background-color: #83C5BE;
+    color: #EDF6F9;
+}
+
+.navbar {
+    background-color: #006D77;
+    color: #EDF6F9;
+    margin: 2%;
 }
