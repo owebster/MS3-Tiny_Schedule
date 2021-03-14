@@ -6,11 +6,21 @@ color: #EDF6F9
 
 body {
     background-color: #83C5BE;
-    color: #EDF6F9;
+    color: #FFDDD2;
 }
-
+/* nav */
 .navbar {
     background-color: #006D77;
-    color: #EDF6F9;
     margin: 2%;
+    border-radius: 12px;
+}
+
+.navbar > a {
+    color: #FFDDD2;
+}
+
+/* hover states */
+.heading:hover {
+    color: #FFDDD2;
+    text-decoration: none;
 }
