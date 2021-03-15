@@ -24,6 +24,11 @@ def homepage():
     return render_template("home.html")
 
 
+@app.route("/login_page")
+def login_page():
+    return render_template("login.html")
+
+
 @app.route("/message_board")
 def get_messages():
     messages = mongo.db.messages.find()

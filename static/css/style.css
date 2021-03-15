@@ -5,6 +5,8 @@ bc: 006D77
 color: #EDF6F9
 */
 
+/* Base Site Styles*/
+
 body {
     background-color: #EDF6F9;
     color: #FFDDD2;
@@ -48,6 +50,14 @@ ul > .NavBar-items {
 .NavBar-Right ul > li {
     margin-right: 15px;
 }
+
+/* Login Page */
+.login-square {
+    height: 70vh;
+    width: 70vh;
+    border-radius: 15px;
+}
+
 
 /* hover states */
 
