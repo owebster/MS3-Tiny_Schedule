@@ -16,43 +16,30 @@
     <title>Tiny Schedule</title>
 </head>
 <body>
-    <!-- experimental nav
-        <div class="flex-containter">
-        <div class="Nav-Bar logo">
-            <a class="heading" href="{{ url_for('homepage') }}">Tiny Schedule</a>
-        </div>
-        <div class="mobileStack">
 
-        </div>
-        <div class="Nav-Bar Nav-Bar-Links">
-            <ul id="heading-items">
-                <li><a class="heading-list" href="{{ url_for('homepage') }}">Homepage.</a></li>
-                <li><a class="heading-list" href="#">Spaces.</a></li>
-                <li><a class="heading-list" href="#">Register.</a></li>
-            </ul>
-        </div>
-    </div>-->
-    <!--Bootstrap nav-->
     <div class="container">
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="{{ url_for('homepage') }}">Tiny Schedule</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('homepage') }}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Spaces</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Register</a>
+        <div class="NavBar">
+            <div class="NavBar-logo">
+                <ul>
+                    <li class="NavBar-items">
+                        <a class="Logo" href="{{ url_for('homepage') }}">Tiny Schedule</a>
                     </li>
                 </ul>
             </div>
-        </nav>
+            <div class="NavBar-Right">
+                <ul>
+                    <li class="NavBar-items">
+                        <a class="Nav-link" href="{{ url_for('homepage') }}">Home.</a>
+                    </li>
+                    <li class="NavBar-items">
+                        <a class="Nav-link" href="#">Spaces.</a>
+                    </li>
+                    <li class="NavBar-items">
+                        <a class="Nav-link" href="#">Register.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     {% block content %}

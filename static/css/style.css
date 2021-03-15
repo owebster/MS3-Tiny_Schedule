@@ -6,44 +6,52 @@ color: #EDF6F9
 */
 
 body {
-    background-color: #BADEDA;
+    background-color: #EDF6F9;
     color: #FFDDD2;
 }
 
-/* experimental nav
-.flex-containter {
-    display: flex;
-}
+/* Navbar */
 
-.Nav-Bar {
-    flex: 1;
-}
-
-.logo {
-    background-color: #006D77;
-}
-
-.heading, .heading-list {
-    color: #FFDDD2;
-}
-
-#heading-items {
-    text-decoration: none;
-    list-style-type: none;
-} */
-
-.navbar {
+.NavBar {
     background-color: #006D77;
     border-radius: 15px;
-    color: #FFDDD2;
-    margin: 2%;
+    padding: 15px;
+    margin: 1rem;
 }
 
-.navbar-brand, .nav-link {
+.NavBar-logo, .NavBar-Right {
+    display: inline-block;
+}
+
+.NavBar-logo > ul, .NavBar-Right > ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+.Logo, .Nav-link {
     color: #FFDDD2;
 }
+
+ul > .NavBar-items {
+    display: inline;
+}
+
+.NavBar-logo > ul, .NavBar-Right > ul {
+    list-style-type: none;
+}
+
+
+.NavBar-Right {
+    float: right;
+}
+
+.NavBar-Right ul > li {
+    margin-right: 15px;
+}
+
 /* hover states */
-.navbar-brand:hover, .nav-link:hover {
+
+.Logo:hover, .Nav-link:hover {
     color: #FFDDD2;
     text-decoration: none;
 }
