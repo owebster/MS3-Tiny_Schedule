@@ -8,17 +8,18 @@ color: #EDF6F9
 /* Base Site Styles*/
 
 body {
-    background-color: #EDF6F9;
-    color: #FFDDD2;
+    background-color: #006D77;
+    color: #006D77;
 }
 
 /* Navbar */
 
 .NavBar {
-    background-color: #006D77;
+    background-color: #FFDDD2;
     border-radius: 15px;
     padding: 15px;
     margin: 1rem;
+    width: auto;
 }
 
 .NavBar-logo, .NavBar-Right {
@@ -31,7 +32,7 @@ body {
 }
 
 .Logo, .Nav-link {
-    color: #FFDDD2;
+    color: #006D77;
 }
 
 ul > .NavBar-items {
@@ -51,17 +52,62 @@ ul > .NavBar-items {
     margin-right: 15px;
 }
 
-/* Login Page */
-.login-square {
-    height: 70vh;
-    width: 70vh;
-    border-radius: 15px;
+@media screen and (max-width: 700px){
+    .NavBar-Right {
+        display: none;
+    }
 }
 
+/* Login Page */
+
+.jumbotron {
+    height: 40vh;
+    width: 40vh;
+    border-radius: 25px;
+    background-color: rgba(255, 220, 211, 1);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 0 6px 20px 10px rgba(255, 220, 211, 0.4);
+}
+
+
+.form-section {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.form-row {
+    text-align: center;
+}
+
+
+@media screen and (min-width: 960px){
+    .jumbotron {
+        height: 50vh;
+        width: 50vh;
+        border-radius: 25px;
+        background-color: rgba(255, 220, 211, 1);
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        box-shadow: 0 6px 20px 10px rgba(255, 220, 211, 0.4);
+    }
+}
 
 /* hover states */
 
 .Logo:hover, .Nav-link:hover {
-    color: #FFDDD2;
+    color: #006D77;
     text-decoration: none;
 }

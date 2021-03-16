@@ -3,10 +3,30 @@
 
 
     <div class="container">
-        <div class="login-square">
-            
+        <div class="jumbotron">
+            <div class="form-section">
+                <form class="needs-validation">
+                <!--User login-->
+                    <div class="row username">
+                        <div class="form-group col s12">
+                            <input id="username" name="username" type="text" minlength="5"
+                                maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" placeholder="Username" required>
+                        </div>
+                    </div>
+                <!--Password-->
+                    <div class="row password">
+                        <div class="form-group col s12">
+                            <input id="password" name="password" type="password" minlength="5"
+                                maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" placeholder="Password" required>
+                        </div>
+                    </div>  
+                <!--Submit button-->
+                    <button class="btn btn-primary" type="submit">Login</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-    
+
 
 {% endblock %}
