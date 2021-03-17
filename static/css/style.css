@@ -2,130 +2,52 @@
 colour palette of choice https://coolors.co/006d77-83c5be-edf6f9-ffddd2-e29578 
 background-color: #BADEDA
 bc: 006D77
-color: #EDF6F9
+color: #EDF6F9 / #FFDDD2
 */
 
 /* Base Site Styles*/
 
 body {
-    background-color: #006D77;
+    background-color: #EDF6F9;
     color: #006D77;
 }
 
 /* Navbar */
-
-.NavBar {
+.navbar {
+    border-radius: 25px;
+    margin: 15px;
     background-color: #FFDDD2;
-    border-radius: 15px;
-    padding: 15px;
-    margin: 1rem;
-    width: auto;
 }
 
-.NavBar-logo, .NavBar-Right {
-    display: inline-block;
+.navbar-brand, .nav-link{
+    color: #006D77 !important;
 }
 
-.NavBar-logo > ul, .NavBar-Right > ul {
-    margin: 0;
-    padding-left: 0;
-}
-
-.Logo, .Nav-link {
-    color: #006D77;
-}
-
-ul > .NavBar-items {
-    display: inline;
-}
-
-.NavBar-logo > ul, .NavBar-Right > ul {
-    list-style-type: none;
-}
-
-
-.NavBar-Right {
-    float: right;
-}
-
-.NavBar-Right ul > li {
-    margin-right: 15px;
-}
-
-@media screen and (max-width: 700px){
-    .NavBar-Right {
-        display: none;
-    }
-}
 
 /* Login Page */
-
 .jumbotron {
+    width: 80vw;
+    margin-top: 10%;
+    background-color: #006D77;
+    color: #FFDDD2;
     border-radius: 25px;
-    background-color: rgba(255, 220, 211, 1);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    box-shadow: 0 6px 20px 10px rgba(255, 220, 211, 0.4);
 }
 
-@media screen and (min-width: 850px){
-    .jumbotron {
-        height: 50vh;
-        width: 50vh;
-        border-radius: 25px;
-        background-color: rgba(255, 220, 211, 1);
-        padding-top: 20px;
-        padding-bottom: 20px;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        box-shadow: 0 6px 20px 10px rgba(255, 220, 211, 0.4);
-    }
-
-    .vertical-center {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-}
-
-#username, #password {
-    background-color: #EDF6F9;
-    border: none;
-    text-decoration: underline;
+.form-group {
     text-align: center;
-    border-radius: 25px;
-    color: #E29578;
 }
 
-.back-button {
-    color: #006D77;
-    font-size: 2rem;
-    padding-left: 2px;
+.form-control {
+    border-radius: 25px;
 }
 
 .btn-primary {
-    background-color: #006D77;
     border: none;
     border-radius: 25px;
-    color: rgba(255, 220, 211, 1);
+    color: #006D77;
+    background-color: #FFDDD2;
 }
 
-.login-header {
-    text-align: center;
-}
 
 /* hover states */
 
@@ -135,7 +57,7 @@ ul > .NavBar-items {
 }
 
 .btn-primary:hover {
-    background-color: #006D77;
+    background-color: #EDF6F9;
     color: #E29578;
 }
 
