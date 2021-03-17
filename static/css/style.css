@@ -61,10 +61,10 @@ ul > .NavBar-items {
 /* Login Page */
 
 .jumbotron {
-    height: 40vh;
-    width: 40vh;
     border-radius: 25px;
     background-color: rgba(255, 220, 211, 1);
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -74,23 +74,31 @@ ul > .NavBar-items {
     box-shadow: 0 6px 20px 10px rgba(255, 220, 211, 0.4);
 }
 
-.back-button {
-    color: #006D77;
-    font-size: 2rem;
-    padding-left: 2px;
-}
+@media screen and (min-width: 850px){
+    .jumbotron {
+        height: 50vh;
+        width: 50vh;
+        border-radius: 25px;
+        background-color: rgba(255, 220, 211, 1);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        box-shadow: 0 6px 20px 10px rgba(255, 220, 211, 0.4);
+    }
 
-.form-section {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.form-row {
-    text-align: center;
+    .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
 }
 
 #username, #password {
@@ -100,6 +108,12 @@ ul > .NavBar-items {
     text-align: center;
     border-radius: 25px;
     color: #E29578;
+}
+
+.back-button {
+    color: #006D77;
+    font-size: 2rem;
+    padding-left: 2px;
 }
 
 .btn-primary {
@@ -113,25 +127,18 @@ ul > .NavBar-items {
     text-align: center;
 }
 
-@media screen and (min-width: 960px){
-    .jumbotron {
-        height: 50vh;
-        width: 50vh;
-        border-radius: 25px;
-        background-color: rgba(255, 220, 211, 1);
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        box-shadow: 0 6px 20px 10px rgba(255, 220, 211, 0.4);
-    }
-}
-
 /* hover states */
 
 .Logo:hover, .Nav-link:hover {
     color: #006D77;
     text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #006D77;
+    color: #E29578;
+}
+
+.back-button:hover {
+    color: #006D77;
 }

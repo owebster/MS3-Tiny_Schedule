@@ -2,31 +2,25 @@
 {% block content %}
 
 
-    <div class="container">
-        <div class="jumbotron">
-            <div class="form-section">
-                <h5 class="login-header">Login</h5>
-                <form class="needs-validation">
-                <!--User login-->
-                    <div class="row username">
-                        <div class="form-group col-12">
-                            <input id="username" name="username" type="text" minlength="5"
-                                maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" placeholder="Username" required>
-                        </div>
-                    </div>
-                <!--Password-->
-                    <div class="row password">
-                        <div class="form-group col-12">
-                            <input id="password" name="password" type="password" minlength="5"
-                                maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" placeholder="Password" required>
-                        </div>
-                    </div>  
-                <!--Submit button-->
-                    <button type="button" class="btn back-button"><i class="fas fa-arrow-circle-left"></i></button>
-                    <button class="btn btn-primary" type="submit">Login</button>
-                </form>
+    <div class="jumbotron">
+        <div class="vertical-center">
+        <form>
+            <h5 class="login-header">Login</h5>
+            
+
+            <div class="form-group">
+                <input id="username" name="username" type="text" minlength="5"
+                maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" placeholder="Username" required>
             </div>
-        </div>
+
+            <div class="form-group">
+                <input id="password" name="password" type="password" minlength="5"
+                maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" placeholder="Password" required>
+            </div>
+            <a  href="{{ url_for('homepage') }}"><i class="fas fa-arrow-circle-left"></i></a>
+            <button class="btn btn-primary" type="submit">Login</button>
+        </form>
+    </div>
     </div>
 
 
