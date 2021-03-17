@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
     {% endblock %}
+
+    {% block content %}
     <title>Tiny Schedule</title>
 </head>
 <body>
@@ -44,7 +46,11 @@
         </div>
     </div>
 
-    {% block content %}
+    <footer>
+        <ul>
+            <li></li>
+        </ul>
+    </footer>
     {% endblock %}
 
     <!--jquery saved as local files-->

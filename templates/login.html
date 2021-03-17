@@ -5,24 +5,25 @@
     <div class="container">
         <div class="jumbotron">
             <div class="form-section">
+                <h5 class="login-header">Login</h5>
                 <form class="needs-validation">
                 <!--User login-->
                     <div class="row username">
-                        <div class="form-group col s12">
+                        <div class="form-group col-12">
                             <input id="username" name="username" type="text" minlength="5"
                                 maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" placeholder="Username" required>
                         </div>
                     </div>
                 <!--Password-->
                     <div class="row password">
-                        <div class="form-group col s12">
+                        <div class="form-group col-12">
                             <input id="password" name="password" type="password" minlength="5"
                                 maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" placeholder="Password" required>
                         </div>
                     </div>  
                 <!--Submit button-->
+                    <button type="button" class="btn back-button"><i class="fas fa-arrow-circle-left"></i></button>
                     <button class="btn btn-primary" type="submit">Login</button>
-                    </div>
                 </form>
             </div>
         </div>

@@ -74,6 +74,11 @@ ul > .NavBar-items {
     box-shadow: 0 6px 20px 10px rgba(255, 220, 211, 0.4);
 }
 
+.back-button {
+    color: #006D77;
+    font-size: 2rem;
+    padding-left: 2px;
+}
 
 .form-section {
     margin: 0;
@@ -88,6 +93,25 @@ ul > .NavBar-items {
     text-align: center;
 }
 
+#username, #password {
+    background-color: #EDF6F9;
+    border: none;
+    text-decoration: underline;
+    text-align: center;
+    border-radius: 25px;
+    color: #E29578;
+}
+
+.btn-primary {
+    background-color: #006D77;
+    border: none;
+    border-radius: 25px;
+    color: rgba(255, 220, 211, 1);
+}
+
+.login-header {
+    text-align: center;
+}
 
 @media screen and (min-width: 960px){
     .jumbotron {
