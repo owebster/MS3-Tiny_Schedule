@@ -16,11 +16,11 @@ body {
 .navbar {
     border-radius: 25px;
     margin: 15px;
-    background-color: #FFDDD2;
+    background-color: #006D77;
 }
 
 .navbar-brand, .nav-link{
-    color: #006D77 !important;
+    color: #FFDDD2 !important;
 }
 
 

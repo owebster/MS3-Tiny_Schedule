@@ -30,7 +30,7 @@ def login_page():
 
 
 @app.route("/message_board")
-def get_messages():
+def message_board():
     messages = mongo.db.messages.find()
     return render_template("messages.html", messages=messages)
 
