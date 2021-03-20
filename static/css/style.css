@@ -49,6 +49,31 @@ body {
 }
 
 
+/* Management page */
+.card {
+    border-radius: 25px;
+}
+
+
+.card-header {
+    border-radius: 25px !important;
+    padding: .75rem .75rem;
+}
+
+.plus-button {
+    color: #E29578 !important;
+    font-size: 1.5rem;
+}
+
+.card-section {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+/*.add-user-body {
+    display: none;
+}*/
+
 /* hover states */
 
 .Logo:hover, .Nav-link:hover {
@@ -56,11 +81,20 @@ body {
     text-decoration: none;
 }
 
-.btn-primary:hover {
+.row > .btn-primary:hover {
     background-color: #EDF6F9;
     color: #E29578;
 }
 
 .back-button:hover {
+    color: #006D77;
+}
+
+.management-page > .btn-primary:hover {
+    background-color: #FFDDD2;
+    color: #006D77;
+}
+
+.fa-plus-circle:hover {
     color: #006D77;
 }
