@@ -20,11 +20,12 @@ body {
     position: relative;
     background-color: #FFDDD2;
     padding: 15px;
-    border-radius: 25px;
+    border-radius: 50px;
 }
 
 .flash-message {
     text-align: center;
+    font-size: 0.8rem;
 }
 
 /* Navbar */
