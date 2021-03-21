@@ -12,6 +12,21 @@ body {
     color: #006D77;
 }
 
+.top-banner {
+    padding: 20px;
+}
+
+.flashes {
+    position: relative;
+    background-color: #FFDDD2;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.flash-message {
+    text-align: center;
+}
+
 /* Navbar */
 .navbar {
     border-radius: 25px;
