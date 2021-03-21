@@ -1,4 +1,7 @@
 {% extends "base.html" %}
+{% block nav %}
+{{ super() }}
+{% endblock %}
 {% block content %}
 
     <div class="container">
@@ -12,7 +15,7 @@
                     <div class="add-user-body card-body">
                         <h5 class="card-title">Have someone new starting ?</h5>
                         <p class="card-text">Add them to your space by creating an account for them.</p>
-                        <a href="#" class="plus-button"><i class="fas fa-plus-circle"></i></a>
+                        <a href="{{ url_for('register_user') }}" class="plus-button"><i class="fas fa-plus-circle"></i></a>
                     </div>
                 </div>
             </div>

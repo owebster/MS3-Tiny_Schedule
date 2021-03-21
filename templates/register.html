@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block nav %}
+{% endblock %}
+{% block content %}
+
+
+    <div class="container">
+        <h3>Register</h3>
+        <div class="row justify-content-center">
+            <div class="jumbotron col-sm-6">
+                <form method="POST" action="{{ url_for('register_user') }}">
+                    <!-- Username -->
+                    <div class="form-group col-12">
+                        <label for="username">User Name</label>
+                        <input name="username" id="username" type="text" aria-describedby="Username Section" minlength="5"
+                        maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate form-control" required>
+                    </div>
+                    <!-- Password -->
+                    <div class="form-group col-12">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password" minlength="5"
+                        maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate form-control" required>
+                    </div>
+                    <!-- Register button -->
+                    <div class="row justify-content-center">
+                        <button type="submit" class="btn btn-primary">Register User</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
