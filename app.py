@@ -81,6 +81,12 @@ def login_page():
     return render_template("login.html")
 
 
+@app.route("/schedule")
+def schedule():
+    messages = mongo.db.messages.find()
+    return render_template("schedule.html")
+
+
 @app.route("/message_board")
 def message_board():
     messages = mongo.db.messages.find()
