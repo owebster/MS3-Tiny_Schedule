@@ -42,6 +42,8 @@ def register_user():
             return redirect(url_for("register_user"))
 
         register = {
+            "fname": request.form.get("fname").lower(),
+            "lname": request.form.get("lname").lower(),
             "username": request.form.get("username").lower(),
             "password": generate_password_hash(request.form.get("password"))
         }
@@ -51,6 +53,7 @@ def register_user():
         session["user"] = request.form.get("username").lower()
         flash("registration successful")
     return render_template("register.html")
+    
 
 @app.route("/login_page", methods=["GET", "POST"])
 def login_page():
