@@ -7,6 +7,10 @@ color: #EDF6F9 / #FFDDD2
 
 /* Base Site Styles*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #EDF6F9;
     color: #006D77;
@@ -25,7 +29,7 @@ body {
 
 .flash-message {
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 /* Navbar */
@@ -86,15 +90,19 @@ body {
     padding-bottom: 1.5rem;
 }
 
+/* Schedule Section */
+.schedule-heading {
+    text-align: center;
+}
+
 /*.add-user-body {
     display: none;
 }*/
 
 /* hover states */
 
-.Logo:hover, .Nav-link:hover {
-    color: #006D77;
-    text-decoration: none;
+.nav-link:hover {
+    color: #E29578 !important;
 }
 
 .row > .btn-primary:hover {

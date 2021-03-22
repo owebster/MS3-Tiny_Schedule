@@ -83,9 +83,14 @@ def login_page():
     return render_template("login.html")
 
 
+@app.route("/user")
+def user():
+    users = list(mongo.db.users.find().sort("lname", 1))
+    return render_template("user.html", users=users)
+
+
 @app.route("/schedule")
 def schedule():
-    messages = mongo.db.messages.find()
     return render_template("schedule.html")
 
 

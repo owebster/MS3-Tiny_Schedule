@@ -6,4 +6,8 @@
         {{ message.message_content }}</br>
     {% endfor %}
 
+    {% for user in users %}
+        {{ user.fname }}
+    {% endfor %}
+    
 {% endblock %}
