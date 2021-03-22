@@ -68,6 +68,8 @@ def login_page():
                 existing_user["password"], request.form.get("password")):
                     session["user"] = request.form.get("username").lower()
                     flash("Welcome, {}".format(request.form.get("username")))
+                    return redirect(url_for("schedule"))
+
             else:
                 #invalide password match
                 flash("Incorrect Username and/or Password")
@@ -78,7 +80,7 @@ def login_page():
             flash("Incorrect Username and/or Password")
             return redirect(url_for("login_page"))
 
-    return render_template("schedule.html")
+    return render_template("login.html")
 
 
 @app.route("/schedule")
