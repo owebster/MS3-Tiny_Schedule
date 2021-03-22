@@ -78,7 +78,7 @@ def login_page():
             flash("Incorrect Username and/or Password")
             return redirect(url_for("login_page"))
 
-    return render_template("login.html")
+    return render_template("schedule.html")
 
 
 @app.route("/schedule")
@@ -91,6 +91,14 @@ def schedule():
 def message_board():
     messages = mongo.db.messages.find()
     return render_template("messages.html", messages=messages)
+
+
+@app.route("/logout")
+def logout():
+    # remove user from session cookie
+    flash("You have been logged out")
+    session.pop("user")
+    return redirect(url_for("login_page"))
 
 
 if __name__ == "__main__":
