@@ -6,6 +6,19 @@
 
     <div class="container">
         <div class="row justify-content-center">
+            <!-- My Team -->
+            <div class="card-section col-10">
+                <div class="card shadow-sm p-3 mb-5">
+                    <div class="management-page card-header">
+                        My Team
+                    </div>
+                    <div class="myTeam-body card-body">
+                        <h5 class="card-title">See who is on your team</h5>
+                        <p class="card-text">Manage, remove or edit a team member.</p>
+                        <a href="{{ url_for('user') }}" class="plus-button"><i class="fas fa-plus-circle"></i></a>
+                    </div>
+                </div>
+            </div>
             <!-- Add new user -->
             <div class="card-section col-10">
                 <div class="card shadow-sm p-3 mb-5">
@@ -28,7 +41,7 @@
                     <div class="Scheudle-body card-body">
                         <h5 class="card-title">Manage your team's scheudle</h5>
                         <p class="card-text">Add, remove or adjust your team's schedule.</p>
-                        <a href="#" class="plus-button"><i class="fas fa-plus-circle"></i></a>
+                        <a href="{{ url_for('schedule') }}" class="plus-button"><i class="fas fa-plus-circle"></i></a>
                     </div>
                 </div>
             </div>

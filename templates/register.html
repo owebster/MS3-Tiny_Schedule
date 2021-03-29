@@ -5,9 +5,9 @@
 
 
     <div class="container">
-        <h3>Register</h3>
         <div class="row justify-content-center">
             <div class="jumbotron col-sm-6">
+                <h3 class="register-heading">Register someone new</h3>
                 <form method="POST" action="{{ url_for('register_user') }}">
                     <!--First & Last name-->
                     <div class="form-group col-12">
@@ -33,6 +33,10 @@
                     <!-- Register button -->
                     <div class="row justify-content-center">
                         <button type="submit" class="btn btn-primary">Register User</button>
+                    </div>
+                    <!-- Back button -->
+                    <div class="back-button row justify-content-center">
+                        <a href="{{ url_for('management') }}" class="btn btn-primary"><i class="fas fa-arrow-circle-left"></i></a>
                     </div>
                 </form>
             </div>

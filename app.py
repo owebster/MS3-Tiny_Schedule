@@ -85,7 +85,7 @@ def login_page():
 
 @app.route("/user")
 def user():
-    users = list(mongo.db.users.find().sort("lname", 1))
+    users = list(mongo.db.users.find().sort("fname", 1))
     return render_template("user.html", users=users)
 
 

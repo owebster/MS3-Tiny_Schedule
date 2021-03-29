@@ -64,14 +64,38 @@ body {
     font-size: 1.5rem;
 }
 
+#main-features {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 10%;
+    padding-bottom: 15%;
+    height: 100vh;
+}
+
 .selling-points {
     padding: 5%;
 }
 
-.feature {
-    margin-right: 0;
+.feature-card-section {
+    padding: 2%;
 }
 
+.card-title {
+    color: #E29578;
+}
+
+.far, .fas {
+    color: #006D77;
+}
+
+.fa-angle-down {
+    color: #E29578 !important;
+}
+
+.feature-card {
+    padding: 1%;
+    margin-bottom: 2%;
+}
 
 /* Login Page */
 .jumbotron {
@@ -123,6 +147,14 @@ body {
     text-align: center;
 }
 
+/* Register Section */
+.register-heading {
+    text-align: center;
+}
+
+.back-button {
+    margin-top: 2%;
+}
 
 /* hover states */
 
