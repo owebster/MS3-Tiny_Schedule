@@ -156,6 +156,14 @@ body {
     margin-top: 2%;
 }
 
+.alternative-login {
+    text-align: center;
+}
+
+.alternative-login button > a {
+    color: #006D77 !important;
+}
+
 /* hover states */
 
 .nav-link:hover {
@@ -182,4 +190,8 @@ body {
 
 .fa-plus-circle:hover {
     color: #006D77;
+}
+
+.alternative-login button:hover {
+    background-color: #FFDDD2;
 }
