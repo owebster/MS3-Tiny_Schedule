@@ -46,16 +46,18 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
-                {% if session.user|lower == "admin"|lower %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('management') }}">Management.</a>
-                    </li>
+                {% if session.user|lower %}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('schedule') }}">Schedule.</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('message_board') }}">Message Board.</a>
                     </li>
+                    {% if session.user|lower == "admin"|lower %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('management') }}">Management.</a>
+                        </li>
+                    {% endif %}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('logout') }}">Log Out</a>
                     </li>
