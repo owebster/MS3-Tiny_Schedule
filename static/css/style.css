@@ -147,6 +147,12 @@ body {
     text-align: center;
 }
 
+/* User Section */
+.user-card {
+    margin: 2% !important;
+}
+
+
 /* Register Section */
 .register-heading {
     text-align: center;
