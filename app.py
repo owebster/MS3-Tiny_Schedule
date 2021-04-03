@@ -68,7 +68,7 @@ def login_page():
                 existing_user["password"], request.form.get("password")):
                     session["user"] = request.form.get("username").lower()
                     flash("Welcome, {}".format(request.form.get("username")))
-                    return redirect(url_for("schedule"))
+                    return redirect(url_for("management"))
 
             else:
                 #invalide password match
