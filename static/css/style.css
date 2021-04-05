@@ -195,6 +195,14 @@ body {
 
 }
 
+.contact-us > a {
+    color: #006D77;
+}
+
+.card-body > ul {
+    text-align: left;
+}
+
 /* hover states */
 
 .nav-link:hover {
@@ -225,4 +233,10 @@ body {
 
 .alternative-login button:hover {
     background-color: #FFDDD2;
+}
+
+.contact-us:hover, .contact-us > a:hover{
+    background-color: #FFDDD2;
+    color: #006D77;
+    text-decoration: none;
 }
