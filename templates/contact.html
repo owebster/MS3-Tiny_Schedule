@@ -2,6 +2,22 @@
 {% block content %}
 
 
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Interested in setting up Tiny Schedule for your team ?</h2>
+                <p>Reach out!</p>
+            </div>
+            <div class="col">
+                <form onsubmit="return sendMail(this);">
+                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                    <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>
+                    <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
 {% endblock %}
