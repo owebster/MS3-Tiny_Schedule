@@ -108,6 +108,11 @@ def logout():
     return redirect(url_for("login_page"))
 
 
+@app.route("/contact_page")
+def contact_page():
+    return render_template("contact.html")
+
+
 if __name__ == "__main__":
         app.run(host=os.environ.get("IP"),
         port=int(os.environ.get("PORT")),

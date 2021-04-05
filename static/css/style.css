@@ -5,7 +5,7 @@ bc: 006D77
 color: #EDF6F9 / #FFDDD2
 */
 
-/* Base Site Styles*/
+/* Base Site Styles */
 
 html {
     scroll-behavior: smooth;
@@ -168,6 +168,31 @@ body {
 
 .alternative-login button > a {
     color: #006D77 !important;
+}
+
+/* Pricing section */
+#pricing {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 10%;
+    padding-bottom: 15%;
+    height: 100vh;
+}
+
+.pricing-heading {
+    text-align: center;
+    padding-top: 2%;
+}
+
+#pricing .row> .jumbotron-fluid {
+    text-align: center;
+    height: auto;
+}
+
+.card-deck > .card {
+    background-color: #006D77;
+    border: none;
+
 }
 
 /* hover states */
