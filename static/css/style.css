@@ -114,7 +114,7 @@ body {
     border-radius: 25px;
 }
 
-.btn-primary {
+.btn-primary, .btn-secondary {
     border: none;
     border-radius: 25px;
     color: #006D77;
@@ -203,6 +203,16 @@ body {
     text-align: left;
 }
 
+/* Contact */
+form > input, form > textarea {
+    margin-bottom: 2%;
+}
+
+.contact-heading {
+    text-align: center;
+}
+
+
 /* hover states */
 
 .nav-link:hover {
@@ -239,4 +249,8 @@ body {
     background-color: #FFDDD2;
     color: #006D77;
     text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background-color: #FFDDD2;
 }
