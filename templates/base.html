@@ -23,34 +23,34 @@
 
 <body>
     <div class="container">
-    <!--Flash messages-->
-    {% with messages = get_flashed_messages() %}
+        <!--Flash messages-->
+        {% with messages = get_flashed_messages() %}
         {% if messages %}
-            {% for message in messages %}
-            <div class="row justify-content-center top-banner">
-                <div class="col-3 flashes">
-                    <h5 class="flash-message">{{ message }}</h5>
-                </div>
+        {% for message in messages %}
+        <div class="row justify-content-center top-banner">
+            <div class="col-3 flashes">
+                <h5 class="flash-message">{{ message }}</h5>
             </div>
-            {% endfor %}
+        </div>
+        {% endfor %}
         {% endif %}
-    {% endwith %}
+        {% endwith %}
 
 
-    {% block nav %}
-    <nav class="navbar navbar-expand-lg navbar-light shadow p-3 mb-5 sticky-top">
-        {% if session.user|lower == "admin"|lower %}
+        {% block nav %}
+        <nav class="navbar navbar-expand-lg navbar-light shadow p-3 mb-5 sticky-top">
+            {% if session.user|lower == "admin"|lower %}
             <a class="navbar-brand" href="{{ url_for('management') }}">Tiny Schedules</a>
-        {% else %}
+            {% else %}
             <a class="navbar-brand" href="{{ url_for('homepage') }}">Tiny Schedules</a>
-        {% endif %}
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                {% if session.user|lower %}
+            {% endif %}
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    {% if session.user|lower %}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('schedule') }}">Schedule.</a>
                     </li>
@@ -58,14 +58,14 @@
                         <a class="nav-link" href="{{ url_for('message_board') }}">Message Board.</a>
                     </li>
                     {% if session.user|lower == "admin"|lower %}
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('management') }}">Management.</a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('management') }}">Management.</a>
+                    </li>
                     {% endif %}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('logout') }}">Log Out</a>
                     </li>
-                {% else %}
+                    {% else %}
                     <li class="nav-item active">
                         <a class="nav-link" href="{{ url_for('homepage') }}"> Home.</a>
                     </li>
@@ -75,12 +75,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('contact_page') }}">Contact Us.</a>
                     </li>
-                {% endif %}
-            </ul>
-        </div>
-    </nav>
-    {% endblock %}
- 
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+        {% endblock %}
+
     </div>
 
 
@@ -99,6 +99,11 @@
         crossorigin="anonymous"></script>
     <!--emailjs-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_iqJAXGFrjNNsx0GoZBdyh");
+        })();
+    </script>
     <!--personal js file-->
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     {% block scripts %}
