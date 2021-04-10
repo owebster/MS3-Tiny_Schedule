@@ -7,6 +7,7 @@
     <div class="container">
         <div class="row justify-content-center">
         {% if session.user|lower %}
+            {% if session.user|lower == "admin"|lower %}
             <!-- My Team -->
             <div class="card-section col-10">
                 <div class="card shadow-sm p-3 mb-5">
@@ -33,7 +34,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Schedule -->
+            <!-- Admin Schedule -->
             <div class="card-section col-10">
                 <div class="card shadow-sm p-3 mb-5">
                     <div class="management-page card-header">
@@ -46,6 +47,21 @@
                     </div>
                 </div>
             </div>
+            {% else %}
+            <!-- User Schedule -->
+            <div class="card-section col-10">
+                <div class="card shadow-sm p-3 mb-5">
+                    <div class="management-page card-header">
+                        Scheudle
+                    </div>
+                    <div class="Scheudle-body card-body">
+                        <h5 class="card-title">Check your scheudle</h5>
+                        <p class="card-text">See whatyou have coming up next</p>
+                        <a href="{{ url_for('schedule') }}" class="plus-button"><i class="far fa-calendar-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
         {% else %}
 
             <div class="alternative-login col-10">

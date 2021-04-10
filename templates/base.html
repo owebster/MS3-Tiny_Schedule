@@ -39,7 +39,7 @@
 
         {% block nav %}
         <nav class="navbar navbar-expand-lg navbar-light shadow p-3 mb-5 sticky-top">
-            {% if session.user|lower == "admin"|lower %}
+            {% if session.user|lower %}
             <a class="navbar-brand" href="{{ url_for('management') }}">Tiny Schedules</a>
             {% else %}
             <a class="navbar-brand" href="{{ url_for('homepage') }}">Tiny Schedules</a>
