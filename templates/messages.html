@@ -3,7 +3,7 @@
 
 
     <div class="container">
-        <button>hello</button>
+        <button><a href="{{ url_for('new_message') }}">new message</a></button>
         <div class="row justify-content-center">
         {% for message in messages %}
             <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">

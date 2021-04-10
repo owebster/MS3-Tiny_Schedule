@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block nav %}
+{% endblock %}
+{% block content %}
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="jumbotron col-sm-6">
+                <h3 class="register-heading">Post a message!</h3>
+                <form method="POST" action="{{ url_for('add_message') }}">
+                    <input type="text" name="message_title" class="form-control validate" id="message_title" placeholder="Title" required/>
+                    <textarea rows="5" name="message_content" class="form-control validate" id="message_content" placeholder="Content" required></textarea>
+                    <!-- Submit button -->
+                    <div class="row justify-content-center">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                    <!-- Back button -->
+                    <div class="back-button row justify-content-center">
+                        <a href="{{ url_for('message_board') }}" class="btn btn-primary"><i class="fas fa-arrow-circle-left"></i></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

@@ -113,6 +113,11 @@ def contact_page():
     return render_template("contact.html")
 
 
+@app.route("/new_message")
+def new_message():
+    return render_template("new_message.html")
+
+
 @app.route("/add_message", methods=["GET", "POST"])
 def add_message():
     if request.method == "POST":
@@ -123,6 +128,9 @@ def add_message():
         mongo.db.messages.insert_one(message)
         flash("Message posted")
         return redirect(url_for("message_board"))
+
+    messages = mongo.db.messages.find().sort("messages", 1)
+    return render_template("new_message.html", messages=messages)
 
 
 if __name__ == "__main__":
