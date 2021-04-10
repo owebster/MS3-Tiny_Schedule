@@ -113,6 +113,18 @@ def contact_page():
     return render_template("contact.html")
 
 
+@app.route("/add_message", methods=["GET", "POST"])
+def add_message():
+    if request.method == "POST":
+        message = {
+            "message_title": request.form.get("message_title"),
+            "message_content": request.form.get("message_content")
+        }
+        mongo.db.messages.insert_one(message)
+        flash("Message posted")
+        return redirect(url_for("message_board"))
+
+
 if __name__ == "__main__":
         app.run(host=os.environ.get("IP"),
         port=int(os.environ.get("PORT")),

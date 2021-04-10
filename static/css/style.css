@@ -212,6 +212,11 @@ form > input, form > textarea {
     text-align: center;
 }
 
+/* Messages */
+.toast {
+    opacity: 100% !important;
+    margin-right: 5%;
+}
 
 /* hover states */
 
