@@ -237,6 +237,12 @@ form > input, form > textarea {
     color: #006D77;
 }
 
+
+/* alternative login */
+.alternative-login {
+    margin-right: auto !important;
+}
+
 /* hover states */
 
 .nav-link:hover {

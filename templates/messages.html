@@ -3,30 +3,39 @@
 
 
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 message-header">
-                <h3>Message Board</h3>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-12 message-button">
-                <button class="add-message-button"><a href="{{ url_for('new_message') }}">new message</a></button>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-        {% for message in messages %}
-            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header">
-                    <strong class="mr-auto">From: {{ message.created_by }}</strong>
-                    <small>11 mins ago</small>
-                </div>
-                <div class="toast-body">
-                        {{ message.message_title }}</br>
-                        {{ message.message_content }}</br>
+        {% if session.user|lower %}
+            <div class="row justify-content-center">
+                <div class="col-12 message-header">
+                    <h3>Message Board</h3>
                 </div>
             </div>
-        {% endfor %}
-        </div>
+            <div class="row justify-content-center">
+                <div class="col-12 message-button">
+                    <button class="add-message-button"><a href="{{ url_for('new_message') }}">new message</a></button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+            {% for message in messages %}
+                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <strong class="mr-auto">From: {{ message.created_by }}</strong>
+                        <small>11 mins ago</small>
+                    </div>
+                    <div class="toast-body">
+                            {{ message.message_title }}</br>
+                            {{ message.message_content }}</br>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        {% else %}
+            <div class="row justify-content-center">
+                <div class="alternative-login col-12">
+                    <p>Please Login</p>
+                    <button class="btn btn-primary alternative-btn"><a href="{{ url_for('login_page') }}">Sign In.</a></button>
+                </div>
+            </div>
+        {% endif %}
     </div>
 
 

@@ -134,7 +134,7 @@ def add_message():
     return render_template("new_message.html", messages=messages)
 
 
-@app.route("error_403")
+@app.route("/error_403")
 def error_403():
     return render_template("403.html")
 
