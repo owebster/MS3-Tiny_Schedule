@@ -134,6 +134,11 @@ def add_message():
     return render_template("new_message.html", messages=messages)
 
 
+@app.route("error_403")
+def error_403():
+    return render_template("403.html")
+
+
 if __name__ == "__main__":
         app.run(host=os.environ.get("IP"),
         port=int(os.environ.get("PORT")),
