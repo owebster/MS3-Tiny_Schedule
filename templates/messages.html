@@ -3,12 +3,21 @@
 
 
     <div class="container">
-        <button><a href="{{ url_for('new_message') }}">new message</a></button>
+        <div class="row justify-content-center">
+            <div class="col-12 message-header">
+                <h3>Message Board</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 message-button">
+                <button class="add-message-button"><a href="{{ url_for('new_message') }}">new message</a></button>
+            </div>
+        </div>
         <div class="row justify-content-center">
         {% for message in messages %}
             <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="toast-header">
-                    <strong class="mr-auto">user</strong>
+                    <strong class="mr-auto">From: {{ message.created_by }}</strong>
                     <small>11 mins ago</small>
                 </div>
                 <div class="toast-body">

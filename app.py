@@ -123,7 +123,8 @@ def add_message():
     if request.method == "POST":
         message = {
             "message_title": request.form.get("message_title"),
-            "message_content": request.form.get("message_content")
+            "message_content": request.form.get("message_content"),
+            "created_by": session["user"]
         }
         mongo.db.messages.insert_one(message)
         flash("Message posted")

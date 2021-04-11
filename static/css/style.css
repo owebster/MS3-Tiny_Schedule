@@ -215,7 +215,26 @@ form > input, form > textarea {
 /* Messages */
 .toast {
     opacity: 100% !important;
-    margin-right: 5%;
+    margin: 5%;
+}
+
+.message-header, .message-button {
+    text-align: center;
+}
+
+.message_heading {
+    text-align: center;
+}
+
+.add-message-button {
+    border: none;
+    border-radius: 25px;
+    background-color: #FFDDD2;
+    padding: 10px;
+}
+
+.add-message-button a {
+    color: #006D77;
 }
 
 /* hover states */
@@ -258,4 +277,13 @@ form > input, form > textarea {
 
 .btn-secondary:hover {
     background-color: #FFDDD2;
+}
+
+.add-message-button a:hover {
+    text-decoration: none;
+    color: #E29578;
+}
+
+.add-message-button:hover {
+    color: #E29578;
 }
