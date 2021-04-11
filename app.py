@@ -134,10 +134,11 @@ def add_message():
     return render_template("new_message.html", messages=messages)
 
 
-@app.route("/error_403")
-def error_403():
-    return render_template("403.html")
-
+@app.route("/delete_message")
+def delete_message():
+    mongo.db.messages.remove({"_id": ObjectId(task_id)})
+    flash("Message Deleted")
+    return redirect(url_for("message_board"))
 
 if __name__ == "__main__":
         app.run(host=os.environ.get("IP"),
