@@ -152,6 +152,9 @@ body {
     margin: 2% !important;
 }
 
+img .card-img-top {
+    border-radius: 50%;
+}
 
 /* Register Section */
 .register-heading {
