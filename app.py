@@ -89,6 +89,11 @@ def user():
     return render_template("user.html", users=users)
 
 
+@app.route("/profile")
+def profile():
+    return render_template("profile.html")
+
+
 @app.route("/schedule")
 def schedule():
     return render_template("schedule.html")
