@@ -19,7 +19,10 @@
                 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                     <div class="toast-header">
                         <strong class="mr-auto">From: {{ message.created_by }}</strong>
-                        <small>11 mins ago</small>
+                        {% if session.user|lower == message.created_by|lower %}
+                            <a href="{{ url_for('delete_message', messages_id=message._id) }}">Delete</a>
+                        {% endif %}
+                        <small></small>
                     </div>
                     <div class="toast-body">
                             {{ message.message_title }}</br>

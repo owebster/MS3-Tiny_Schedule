@@ -139,11 +139,12 @@ def add_message():
     return render_template("new_message.html", messages=messages)
 
 
-@app.route("/delete_message")
-def delete_message():
-    mongo.db.messages.remove({"_id": ObjectId(task_id)})
+@app.route("/delete_message/<messages_id>")
+def delete_message(messages_id):
+    mongo.db.messages.remove({"_id": ObjectId(messages_id)})
     flash("Message Deleted")
     return redirect(url_for("message_board"))
+
 
 if __name__ == "__main__":
         app.run(host=os.environ.get("IP"),
