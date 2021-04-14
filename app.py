@@ -146,6 +146,13 @@ def delete_message(messages_id):
     return redirect(url_for("message_board"))
 
 
+@app.route("/delete_user/<users_id>")
+def delete_users(users_id):
+    mongo.db.users.remove({"_id": ObjectId(users_id)})
+    flash("User Removed")
+    return redirect(url_for("user"))
+
+
 if __name__ == "__main__":
         app.run(host=os.environ.get("IP"),
         port=int(os.environ.get("PORT")),
