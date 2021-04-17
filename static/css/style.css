@@ -241,7 +241,10 @@ form > input, form > textarea {
 }
 
 
-/* alternative login */
+/* Password List */
+.password-list {
+    text-align: left;
+}
 
 /* hover states */
 
