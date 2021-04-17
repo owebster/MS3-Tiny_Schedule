@@ -22,7 +22,6 @@
                         {% if session.user|lower == message.created_by|lower %}
                             <a href="{{ url_for('delete_message', messages_id=message._id) }}">Delete</a>
                         {% endif %}
-                        <small></small>
                     </div>
                     <div class="toast-body">
                             {{ message.message_title }}</br>

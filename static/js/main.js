@@ -11,4 +11,8 @@ $(document).ready(function () {
             });
         }
     });
+
+    $('.confirmation').click(function(){
+        $('.confirmation').toggleClass
+    });
 });

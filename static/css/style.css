@@ -245,7 +245,7 @@ form > input, form > textarea {
 
 /* hover states */
 
-.nav-link:hover {
+.active, .nav-link:hover {
     color: #E29578 !important;
 }
 
