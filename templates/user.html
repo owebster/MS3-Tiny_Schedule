@@ -3,19 +3,29 @@
 
     {% if users|length > 0 %}
         <div class="container">
+            {% if session.user|lower %}
             <div class="row justify-content-center">
                 {% for user in users %}
                 <div class="user-card card col-3">
                     <!--<img src="..." class="card-img-top" alt="...">-->
                     <div class="card-body">
                         <h5 class="card-title">{{ user.fname }}</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
+                        <p class="card-text">{{ user.lname }}</p>
+                        <small class="card-text">{{ user.user_info }}</small>
+                        <br>
                         <a href="{{ url_for('delete_users', users_id=user._id) }}">Delete</a>
                     </div>
                 </div>
                 {% endfor %}
             </div>
+            {% else %}
+            <div class="row justify-content-center">
+                <div class="alternative-login col-12">
+                    <p>Please Login</p>
+                    <button class="btn btn-primary alternative-btn"><a href="{{ url_for('login_page') }}">Sign In.</a></button>
+                </div>
+            </div>
+            {% endif %}
         </div>
     {% endif %}
 
