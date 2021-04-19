@@ -3,7 +3,7 @@
 
     {% if users|length > 0 %}
         <div class="container">
-            {% if session.user|lower %}
+            {% if session.user|lower == "admin"|lower %}
             <div class="row justify-content-center">
                 {% for user in users %}
                 <div class="user-card card col-3">

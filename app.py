@@ -99,11 +99,6 @@ def aboutme():
     aboutme = list(mongo.db.users.find().sort("user_info"))
 
 
-@app.route("/schedule")
-def schedule():
-    return render_template("schedule.html")
-
-
 @app.route("/message_board")
 def message_board():
     messages = mongo.db.messages.find()
