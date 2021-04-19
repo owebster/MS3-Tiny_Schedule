@@ -13,7 +13,9 @@
                         <p class="card-text">{{ user.lname }}</p>
                         <small class="card-text">{{ user.user_info }}</small>
                         <br>
+                        {% if username == admin %}
                         <a href="{{ url_for('delete_users', users_id=user._id) }}">Delete</a>
+                        {% endif %}
                     </div>
                 </div>
                 {% endfor %}
