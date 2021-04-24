@@ -7,7 +7,6 @@
             {% if session.user|lower %}
             <div class="jumbotron col-sm-6">
                 <h3 class="register-heading">Hi {{ session.user }}</h3>
-                <textarea rows="5" name="aboutme" class="form-control" id="aboutme" placeholder="Something about yourself"></textarea>
             </div>
             {% else %}
             <div class="row justify-content-center">
@@ -22,7 +21,3 @@
 
 
 {% endblock %}
-
-<!--<h5 class="card-title"> {{ user.fname }}</h5>
-                <h5 class="card-title"> {{ user.lname }}</h5>
-                <h5 class="card-title"> {{ user.user_info }}</h5>-->
