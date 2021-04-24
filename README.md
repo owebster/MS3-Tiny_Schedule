@@ -32,14 +32,25 @@ View a live version of my site [here](https://tinyschedule.herokuapp.com/)
 
 ## UX
 ### The Experience:
-
+I wanted to create a site which has animalistic and clean look. It has a modern colour tone which is calming and the removal of a standard white background, it creates a unique look.
+Corners are rounded on most UI elements and even the Navigation Bar at the top is separated from the top to create a different look.
 
 ### Journey of the Site:
-
+As a new user with no account, you are greeted with a run down on what the site is and what you can expect from using this website.
+From there you can see the different tiers that are offered and what features a user can expect from different tiers
 
 
 ### Colours:
 
+#EDF6F9 - This is used as the base background colour of the site to stand out from other white background based sites.
+
+#006D77 - This is a darker variant of the background colour to create a familiar tone but offers contrast not only for an accessibility point of view but also for general viewing.
+
+#BADEDA - This is an in between colour between the top two colours. This is used for hover style colours to again be different to being just white. 
+
+#FFDDD2 - This colour offers a change in the colour pallet so is mainly used for text colouring to offer the text a bit of a "pop" out moment.
+
+#E29578 - Offering the starkest difference in colour, this orangy colour is used for hover states on assets that use #FFDDD2 as a font colour
 
 ## UI 
 ### The Interface:
