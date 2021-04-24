@@ -37,8 +37,27 @@ Corners are rounded on most UI elements and even the Navigation Bar at the top i
 
 ### Journey of the Site:
 As a new user with no account, you are greeted with a run down on what the site is and what you can expect from using this website.
-From there you can see the different tiers that are offered and what features a user can expect from different tiers
+From there you can see the different tiers that are offered and what features a user can expect from different tiers.
 
+The login page is present for users that have already been signed up and there is a contact page tab for users to reach out for more information.
+
+Once reached out to the developer, users will be have an admin account created for them. As an admin you can create and delete users, see what users are in your team as well as all the functions of a standard user, such as creating messages, seeing your basic profile page and any future options.
+
+Messaging section:
+* Nice and simple feature where users can utilise the site as a digital white board. In times where we're spending more time at home, this is a great options for users to collaborate ideas like they might do on a meeting room whiteboard.
+
+User sections (admin access)
+* This is a place where the admin can view everyone's name and user name. Quick and easy place for admins to check in on their team's details
+
+Management section
+* this is treated like a homepage once someone has logged in. 
+    
+    * For admins, it is a place to view their users, create new users and to check their own profile. 
+        * Within the User section (explained above) managers can also remove users from the space if someone changes or is no longer with the team
+        * The new user section is a sign-up page for admins to create new users by entering their name, username and password
+        * The profile page is similar to the one for basic users where it's a quick stop to check if you're signed into the right account.
+    
+    * For standard users, this is treated as a basic home screen to easily access their own profile as a welcome screen.
 
 ### Colours:
 
@@ -55,6 +74,7 @@ From there you can see the different tiers that are offered and what features a 
 ## UI 
 ### The Interface:
 
+The site is built to be modern and mobile first. Its features are also supported across multiple browsers. This is shown in different parts of the site:
 
 
 ## Objectives
