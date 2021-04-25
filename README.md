@@ -78,15 +78,23 @@ The site is built to be modern and mobile first. Its features are also supported
 
 * The nav bar features a disjointed design where it's not connected to the top of the site like normal nav bars typically do. It is scalable and changes accordingly to device and screen size to what it shows.
 
-* The messaging section is treated like sticky notes on a white board
+* The messaging section is treated like sticky notes on a white board. On a large screen device it holds two notes side by side. 
+    * On mobile / small screen devices, it shows the messages in a list view that is available to scroll, this is done with `col-12` on small devices.
+
+* The management page differs between different users but the UI is similar across the board. Different sections withing the management page are separated by individual cells that span across the container with `col-12`. 
+
+* The profile page features a nice and basic `jumbotron` that floats in the middle of the page. This is designed to quickly let users see if they're logged into the right account.
 
 
 ## Objectives
 ### For the Site Owner:
-
+For the site owner, the main objective is to get more people signing up to accounts and for people on the base tier to sign up for the higher tiers. With extra features that can be built on top of the higher tiers, this will drive users who start off with the base tier to upgrade. 
+The other objective for the site owner is to ensure users get a smooth experience whilst collaborating with their team.
+Ensuring accounts admin creates are functional and there are little to no down time for seamless collaboration.
 
 ### For the User:
-
+For the user the main goal is to have an easy to use interface to talk and share ideas with their team members, no matter the size.
+Another objective would be to have the ability for admins / managers to easily talk to their team members without the need for video calls.
 
 ## Wireframe:
 For my wireframes, I used Balsamiq Wireframes to mockup and create the site in different device sizes. Shown below are the different wireframes for Mobile, Tablet and Desktop. I started with the mobile site and worked from there to scale up the design. You can click on the image for a larger size.
