@@ -110,10 +110,24 @@ The site was built with accessibility needs in mind.
 ## Scope
 
 ### Start
-   
+At the planning stage of this project, I planned out the features that I wanted to implement and chose the colour scheme of the site. This was then plotted down on my wireframe to give a skeleton look of where everything would go.
+Planning.
+* Message board feature
+* The ability to create users
+* The ability for admins to delete users
+UI/UX.
+* With the basic HTML skeleton I layed out
+    * The admin section
+    * Messaging section
+    * Connected to MongoDB and imported the relevant frameworks (flask)
 
 ### Middle
-   
+* Content and connection
+    * After connecting MongoDB, I started testing the implementation of the mongoDB data with manual entry directly within MongoDB's site and then moved onto building a user input option on my project to inject and remove data at will
+        * I created the messaging section where users can post notes to a digital messaging board
+        * I created the admin functionality where admins can create new users to join their team
+        * Deletion functionality was added as well for admins to remove team members from their team
+        * A profile page was added for users to check if they're logged into the right account.
 
 ### Ongoing
    
