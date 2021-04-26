@@ -128,12 +128,22 @@ UI/UX.
         * I created the admin functionality where admins can create new users to join their team
         * Deletion functionality was added as well for admins to remove team members from their team
         * A profile page was added for users to check if they're logged into the right account.
+* Styling
+    * Colour style for the site is mentioned above, I have chosen these colours to create a calm and relaxing tone for users to work with whilst they're collaborating with each other.
+    * The style of the page like mentioned above is suppose to feel like it's modern and different. Which is why the nav bar is not connected to the top of the page and all elements are rounded off to fit the device types we use these days
 
 ### Ongoing
-   
+* For future ideas to add on for the different tier plans, I want to build:
+    * Direct to person messaging
+    * Further addition to profile page
+    * File upload for message board
 
 ## User Stories
-
+* As an Admin I expect to be able to:
+    * Create new users
+    * Send messages to the team
+    * Remove users 
+    * Have a space where it's easy to use and understand
 
 ## Features
 ### Current:
@@ -145,14 +155,15 @@ UI/UX.
 ## Technologies used:
 * HTML5
 * CSS
-* Javascript
-   * [Jquery](https://jquery.com)
 * [Bootstrap](https://getbootstrap.com/) - for structure and extra features of the site
 * [Fontawesome](https://fontawesome.com/)
+* Javascript
+   * [Jquery](https://jquery.com)
+* [EmailJS](https://www.emailjs.com/)
+* Python
 * [MongoDB](https://www.mongodb.com/)
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 * [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
-* [EmailJS](https://www.emailjs.com/)
 
 ## Feature and Technology Testing
 ### Manual testing:
