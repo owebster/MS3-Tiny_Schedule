@@ -190,9 +190,16 @@ This was also used to debug any structural and styling issues on the fly
 All buttons and links have been accounted for and directs to the right source
 
 ## Deployment:
-Code has been published to github using git and terminal.
-Code history is managed via github as well.
-Site is deployed to heroku - http://tinyschedule.herokuapp.com
+During this project, I made sure that I spent some of my time focusing on how to properly manage and deploy my project. I used my own IDE (VSCode), Github's desktop app and the IDE's (VS Code) terminal to create branches, test and deploy my code. I primarily did my work in my testing branch as I knew that I would commit to my main branch closer to the time I made my site public. Within the IDE:
+
+I used the built in terminal to get git status, git add, git commits and git push
+Within Github's desktop app:
+
+I used to push to github and change/create branches when I wanted to test out new features / layouts. An example of this was when I was creating the hero carousel and wanted to test how different screen sizes would affect the provided images
+
+- Code has been published to github using git and terminal.
+- Code history is managed via github as well.
+- Site is deployed to heroku - http://tinyschedule.herokuapp.com
 
 
 ## Credits:
