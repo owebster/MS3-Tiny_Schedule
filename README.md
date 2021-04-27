@@ -23,7 +23,6 @@ View a live version of my site [here](https://tinyschedule.herokuapp.com/)
       * [Middle](#middle)
       * [Ongoing](#ongoing)
    * [User Stories](#user-stories)
-   * [Features](#features)
    * [Technologies Used](#technologies-used)
    * [Feature and Technology Testing](#feature-and-technology-testing)
    * [Further Testing](#further-testing)
@@ -108,7 +107,6 @@ The site was built with accessibility needs in mind.
    * Tested with Lighthouse to improve and fix accessibility concerns
 
 ## Scope
-
 ### Start
 At the planning stage of this project, I planned out the features that I wanted to implement and chose the colour scheme of the site. This was then plotted down on my wireframe to give a skeleton look of where everything would go.
 Planning.
@@ -144,13 +142,6 @@ UI/UX.
     * Send messages to the team
     * Remove users 
     * Have a space where it's easy to use and understand
-
-## Features
-### Current:
-
-
-
-### Future:
 
 ## Technologies used:
 * HTML5

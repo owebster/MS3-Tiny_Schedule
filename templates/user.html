@@ -6,12 +6,11 @@
             {% if session.user|lower == "admin"|lower %}
             <div class="row justify-content-center">
                 {% for user in users %}
-                <div class="user-card card col-3">
+                <div class="user-card card col-sm-3 col-10">
                     <!--<img src="..." class="card-img-top" alt="...">-->
                     <div class="card-body">
                         <h5 class="card-title">{{ user.fname }}</h5>
                         <p class="card-text">{{ user.lname }}</p>
-                        <small class="card-text">{{ user.user_info }}</small>
                         <br>
                         {% if username == admin %}
                         <a href="{{ url_for('delete_users', users_id=user._id) }}">Delete</a>
