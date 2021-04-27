@@ -180,7 +180,7 @@ All CSS was tested using direct input with https://jigsaw.w3.org and no errors w
 All Javascript has been passed through https://jshint.com and no errors occured
 
 ### Known issues
-
+Currently the contact us section is functional, but does not notify the user that their request has been sent - working on a fix.
 
 ### Chrome developer tools
 When building the site, during each section I used Chrome's inspect and developer tools (such as lighthouse) to validate my work and to ensure the site worked across multiple screen sizes.
@@ -190,7 +190,9 @@ This was also used to debug any structural and styling issues on the fly
 All buttons and links have been accounted for and directs to the right source
 
 ## Deployment:
-
+Code has been published to github using git and terminal.
+Code history is managed via github as well.
+Site is deployed to heroku - http://tinyschedule.herokuapp.com
 
 
 ## Credits:
