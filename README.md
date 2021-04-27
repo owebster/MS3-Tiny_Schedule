@@ -158,7 +158,15 @@ UI/UX.
 
 ## Feature and Technology Testing
 ### Manual testing:
-
+Each feature set was tested on mobile, medium and large screen, natively and also via developer inspection on Chrome and Safari.
+- Log in functionality
+- Create user functionality
+- Contact form
+- User interface and scalability of elements on site
+- Messaging functionality
+- Delete message functionality
+- Delete user functionality
+- Individual log in functionality for users that are not admins
 
 ## Further Testing:
 ### HTML
