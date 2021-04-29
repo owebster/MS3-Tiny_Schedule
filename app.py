@@ -70,7 +70,7 @@ def login_page():
                     return redirect(url_for("management"))
 
             else:
-                #invalide password match
+                #invalid password match
                 flash("Incorrect Username and/or Password")
                 return redirect(url_for("login_page"))
 
@@ -82,19 +82,19 @@ def login_page():
     return render_template("login.html")
 
 
-@app.route("/user")
+@app.route("/user") #usersection
 def user():
     users = list(mongo.db.users.find().sort("fname"))
 
     return render_template("user.html", users=users)
 
 
-@app.route("/profile")
+@app.route("/profile") #profile section
 def profile():
     return render_template("profile.html")
 
 
-@app.route("/message_board")
+@app.route("/message_board") #message section
 def message_board():
     messages = mongo.db.messages.find()
     return render_template("messages.html", messages=messages)
@@ -108,17 +108,17 @@ def logout():
     return redirect(url_for("login_page"))
 
 
-@app.route("/contact_page")
+@app.route("/contact_page") #contact section
 def contact_page():
     return render_template("contact.html")
 
 
-@app.route("/new_message")
+@app.route("/new_message") #add new message section
 def new_message():
     return render_template("new_message.html")
 
 
-@app.route("/add_message", methods=["GET", "POST"])
+@app.route("/add_message", methods=["GET", "POST"]) #create new message in mongodb
 def add_message():
     if request.method == "POST":
         message = {
@@ -134,14 +134,14 @@ def add_message():
     return render_template("new_message.html", messages=messages)
 
 
-@app.route("/delete_message/<messages_id>")
+@app.route("/delete_message/<messages_id>") #delete message
 def delete_message(messages_id):
     mongo.db.messages.remove({"_id": ObjectId(messages_id)})
     flash("Message Deleted")
     return redirect(url_for("message_board"))
 
 
-@app.route("/edit_message/<messages_id>", methods=["GET", "POST"])
+@app.route("/edit_message/<messages_id>", methods=["GET", "POST"]) #edit single message in mongodb
 def edit_message(messages_id):
     if request.method == "POST":
         submit = {
@@ -162,7 +162,7 @@ def edit_message(messages_id):
     return render_template("edit_message.html", messages=messages)
 
 
-@app.route("/delete_user/<users_id>")
+@app.route("/delete_user/<users_id>") #option to delete users by admin user
 def delete_users(users_id):
     mongo.db.users.remove({"_id": ObjectId(users_id)})
     flash("User Removed")
