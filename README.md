@@ -210,6 +210,7 @@ I used to push to github and change/create branches when I wanted to test out ne
    * [Bootstrap](https://getbootstrap.com/)
    * [ColorTools](https://www.colortools.net/color_complementary.html) for picking complementary and contrasting colours
    * My mentor Spencer for helping me along the way on my first project.
+   * Kevin from Code Institute with help on the edit function in the message section
    * [W3School](https://www.w3schools.com/howto/howto_css_smooth_scroll.asp) for safari smooth scrolling: 
       ``` 
       $(document).ready(function(){
