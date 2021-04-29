@@ -98,9 +98,9 @@ Another objective would be to have the ability for admins / managers to easily t
 ## Wireframe:
 For my wireframes, I used Balsamiq Wireframes to mockup and create the site in different device sizes. Shown below are the different wireframes for Mobile, Tablet and Desktop. I started with the mobile site and worked from there to scale up the design. You can click on the image for a larger size.
 
-<img src="static/assets/small.png" alt="Wireframes of small sizing" width="576" height="360" />
-<img src="static/assets/medium.png" alt="Wireframes of medium sizing" width="576" height="360" />
-<img src="static/assets/large.png" alt="Wireframes of large screen sizing" width="576" height="360" />
+<img src="static/assets/small.png" alt="Wireframes of small sizing" style="zoom:50%;" />
+<img src="static/assets/medium.png" alt="Wireframes of medium sizing" style="zoom:50%;" />
+<img src="static/assets/large.png" alt="Wireframes of large screen sizing" style="zoom:50%;" />
 
 ## Accessibility
 The site was built with accessibility needs in mind. 
