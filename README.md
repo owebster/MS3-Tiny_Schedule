@@ -9,7 +9,7 @@ I decided on building a site for small businesses or teams to be able to easily 
 
 In this document I will go through what I've built and why, as well as future goals and testing that's been done to make sure this site is functional in what it offers as well as across multiple device types, from mobile to desktop.
 
-View a live version of my site [here](https://tinyschedule.herokuapp.com/)
+View a live version of my site [here](https://tinyschedule.herokuapp.com)
 
 ## Table of content
    * [UX](#ux) 
