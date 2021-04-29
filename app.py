@@ -147,7 +147,14 @@ def edit_message(messages_id):
             "message_title": request.form.get("message_title"),
             "message_content": request.form.get("message_content")
         }
-        mongo.db.messages.update({"_id": ObjectId(messages_id)}, submit)
+        mongo.db.messages.update_one({ 
+            '_id': ObjectId(messages_id) 
+            }, { 
+            '$set': { 
+                'message_title': request.form.get("message_title"),
+                'message_content': request.form.get("message_content") 
+            } 
+        })
         flash("Message Updated")
 
     messages = mongo.db.messages.find_one({"_id": ObjectId(messages_id)})
