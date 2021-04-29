@@ -1,7 +1,7 @@
 # MS3-Tiny_Schedule
  A scheduling site for small teams to colaborate and manage
 
-<img src="" alt="Image of screen-mockup on desktop, tablet and mobile screen sizes" />
+<img src="static/assets/websitemockup.jpg" alt="Image of screen-mockup on desktop, tablet and mobile screen sizes" />
 
 ## An Overview
 For my third milestone project I have chosen to build a small teams messaging platform for small teams and businesses to stay in touch with each other. This project is built using HTML, CSS, Javascript, python, mongoDB and accompanying frameworks. Show casing mobile first design, usage of API's and also a backend framework for users to interact with the site.
@@ -174,7 +174,6 @@ All HTML code has gone through https://validator.w3.org/ and no errors occur
 
 ### CSS
 All CSS was tested using direct input with https://jigsaw.w3.org and no errors were returned
-<img src="static/assets/websitemockup.jpg" alt="screenshot of CSS w3 Validation completion checks, passed" width="576" height="360" />
 
 ### JS
 All Javascript has been passed through https://jshint.com and no errors occurred
