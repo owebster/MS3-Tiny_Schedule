@@ -13,7 +13,7 @@
                         <p class="card-text">Last Name: {{ user.lname }}</p>
                         <p class="card-text">Username: {{ user.username }}</p>
                         <br>
-                        {% if username == admin %}
+                        {% if session.username == admin %}
                         <a href="{{ url_for('delete_users', users_id=user._id) }}">Delete</a>
                         {% endif %}
                     </div>
