@@ -51,7 +51,21 @@ def register_user():
 
         flash("registration successful")
     return render_template("register.html")
-    
+
+
+@app.route("/edit_user/<users_id>", methods=["GET", "POST"])
+def edit_user(users_id):
+    if request.method == "POST":
+        submit = {
+            "users_fname": request.form.get("users_fname"),
+            "users_lname": request.form.get("users_lname")
+        }
+        mongo.db.tasks.update({"_id": ObjectId(users_id)}, submit)
+        flash("User Details Successfully Updated")
+
+    users = mongo.db.users.find_one({"_id": ObjectId(users_id)})
+    return render_template("edit_user.html", users=users)
+
 
 @app.route("/login_page", methods=["GET", "POST"])
 def login_page():
