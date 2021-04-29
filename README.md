@@ -109,7 +109,7 @@ The site was built with accessibility needs in mind.
 ## Scope
 ### Start
 At the planning stage of this project, I planned out the features that I wanted to implement and chose the colour scheme of the site. This was then plotted down on my wireframe to give a skeleton look of where everything would go.
-Planning.
+Planning:
 * Message board feature
 * The ability to create users
 * The ability for admins to delete users

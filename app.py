@@ -88,15 +88,9 @@ def user():
     return render_template("user.html", users=users)
 
 
-@app.route("/profile")#/<users_id>", methods=["GET", "POST"]
+@app.route("/profile")
 def profile():
-    #user = mongo.db.users.find()
     return render_template("profile.html")
-
-
-@app.route("/aboutme")
-def aboutme():
-    aboutme = list(mongo.db.users.find().sort("user_info"))
 
 
 @app.route("/message_board")
