@@ -20,6 +20,8 @@
                     <div class="toast-header">
                         <strong class="mr-auto">From: {{ message.created_by }}</strong>
                         {% if session.user|lower == message.created_by|lower %}
+                            <a href="{{ url_for('edit_message', messages_id=message._id) }}">Edit message</a>
+                            <hr>
                             <a href="{{ url_for('delete_message', messages_id=message._id) }}">Delete</a>
                         {% endif %}
                     </div>

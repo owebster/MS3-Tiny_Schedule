@@ -53,20 +53,6 @@ def register_user():
     return render_template("register.html")
 
 
-@app.route("/edit_user/<users_id>", methods=["GET", "POST"])
-def edit_user(users_id):
-    if request.method == "POST":
-        submit = {
-            "users_fname": request.form.get("users_fname"),
-            "users_lname": request.form.get("users_lname")
-        }
-        mongo.db.tasks.update({"_id": ObjectId(users_id)}, submit)
-        flash("User Details Successfully Updated")
-
-    users = mongo.db.users.find_one({"_id": ObjectId(users_id)})
-    return render_template("edit_user.html", users=users)
-
-
 @app.route("/login_page", methods=["GET", "POST"])
 def login_page():
     if request.method == "POST":
@@ -152,6 +138,20 @@ def delete_message(messages_id):
     mongo.db.messages.remove({"_id": ObjectId(messages_id)})
     flash("Message Deleted")
     return redirect(url_for("message_board"))
+
+
+@app.route("/edit_message/<messages_id>", methods=["GET", "POST"])
+def edit_message(messages_id):
+    if request.method == "POST":
+        submit = {
+            "message_title": request.form.get("message_title"),
+            "message_content": request.form.get("message_content")
+        }
+        mongo.db.messages.update({"_id": ObjectId(messages_id)}, submit)
+        flash("Message Updated")
+
+    messages = mongo.db.messages.find_one({"_id": ObjectId(messages_id)})
+    return render_template("edit_message.html", messages=messages)
 
 
 @app.route("/delete_user/<users_id>")
