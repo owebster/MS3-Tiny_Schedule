@@ -180,6 +180,9 @@ All CSS was tested using direct input with https://jigsaw.w3.org and no errors w
 ### JS
 All Javascript has been passed through https://jshint.com and no errors occurred
 
+### Python
+All python has been passed through https://www.pythonchecker.com and passed
+
 ### Known issues
 Currently the contact us section is functional, but does not notify the user that their request has been sent - working on a fix.
 
